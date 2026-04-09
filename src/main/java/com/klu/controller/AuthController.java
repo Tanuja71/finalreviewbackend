@@ -14,7 +14,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = { "http://localhost:5173", "app.cors.allowed-origin=https://finalreviewfrontend-5.onrender.com" })
 public class AuthController {
 
     private final AuthService authService;
