@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/orders")
 @RequiredArgsConstructor
-@CrossOrigin(origins = { "http://localhost:5173", "app.cors.allowed-origin=https://finalreviewfrontend-5.onrender.com" })
+@CrossOrigin(origins = "*")
 public class OrderController {
 
     private final OrderService orderService;
